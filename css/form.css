@@ -1,0 +1,95 @@
+
+html, body {
+    height: 100%;
+}
+
+/* 1 column + 2 column = table*/
+[class*='col-'] {
+    float: left;
+}
+
+/* 1 column*/
+.col-3-10 {
+    width: 25%;
+    min-height:100%;
+    margin: 0;
+}
+
+/* 1 column fixed*/
+.fixedblok{
+
+    position: fixed;
+    top: 6px;
+    z-index: 1;
+}
+
+
+/* 2 column*/
+.col-4-10 {
+    width: 75%;
+    min-height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border: #aaa solid 1px;
+    padding: 0.3em;
+    background: #eee;
+    text-shadow: 1px 1px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 2px #fff inset;
+    box-shadow: 1px 1px 2px #fff inset;
+}
+
+fieldset legend {
+    font-weight: bold;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    -moz-box-shadow: 3px 3px 15px #bbb;
+    -webkit-box-shadow: 3px 3px 15px #bbb;
+    box-shadow: 3px 3px 15px #bbb;
+    max-width: 100%;
+}
+
+table {
+    border-spacing: 0 10px;
+    font-weight: bold;
+}
+th {
+    padding: 10px 1px;
+    background: #eee;
+    color: #444;
+    border-right: 1px solid #aaa; 
+    font-size: 0.9em;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+td:first-child {
+    border-left: 1px solid #aaa;
+    border-right: none;
+}
